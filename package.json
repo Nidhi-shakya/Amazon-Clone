@@ -1,0 +1,29 @@
+{
+  "name": "shopzone-amazon-clone",
+  "version": "1.0.0",
+  "description": "Professional Amazon Clone E-Commerce Platform built with React, Node.js, Express, and MongoDB",
+  "private": true,
+  "scripts": {
+    "start": "node server/server.js",
+    "server": "node --watch server/server.js",
+    "client": "npm --prefix client run dev",
+    "dev": "concurrently -n \"SERVER,CLIENT\" -c \"blue,green\" \"npm run server\" \"npm run client\"",
+    "seed": "node server/seeds/seeder.js",
+    "test": "node --test server/tests/api.test.js"
+  },
+  "keywords": [
+    "amazon-clone",
+    "ecommerce",
+    "react",
+    "nodejs",
+    "express",
+    "mongodb",
+    "shopzone"
+  ],
+  "author": "Full Stack Developer",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
+
